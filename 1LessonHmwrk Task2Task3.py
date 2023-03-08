@@ -8,3 +8,10 @@
  print ("Second Line", end = '\n\n\n\n\n') 
  # 'Final line' starting from 5 empty lines after previous one  
  print ("Final line")
+ 
+
+Task2 
+
+print('#'* 9, '\n#', '\t', '\t#','\n#', '\t', '\t#','\n#', '\t', '\t#','\n#########','\n')
+
+print('#', '\t', '\t#','\n#','\t', '\t#','\n#########','\n#','\t', '\t#','\n#', '\t', '\t#')
