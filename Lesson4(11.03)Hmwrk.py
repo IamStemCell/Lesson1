@@ -5,35 +5,34 @@ def first2last2(SampleString):
     if len(SampleString) < 2:
          return " " 
     
-    return SampleString[0:2]+SampleString[-2:]
+    else: return SampleString[0:2]+SampleString[-2:]
      
 print(first2last2("helloworld"))
 print(first2last2("my"))
 print(first2last2("x"))
 
 
-Task 2
+#Task 2
+#The valid phone number program.
 
-The valid phone number program.
+randomstring = '2345675467'
+if randomstring.isdigit() and len(randomstring) == 10:
+    print('the string is in the right format for a phone number')
+else: 
+print('the string needs formatting')
 
-Make a program that checks if a string is in the right format for a phone number. 
-The program should check that the string contains only numerical 
-characters and is only 10 characters long
-. Print a suitable message depending on the outcome of the string evaluation.
+#Task 3
+#The math quiz program.
 
+user_input = int(input("multiply 14 by 79, then substract 17: "))
+if user_input == 1089:
+    print("thank you. It's a valid answer")
+else: print("unfortunately, the answer is incorrect")
 
-Task 3
-
-The math quiz program.
-
-Write a program that asks the answer for a mathematical expression, checks whether the user is right or wrong, and then responds with a message accordingly.
-
- 
-
-Task 4
+#Task 4 
+#The name check.
 
 name = 'svitlana'
-username = input("Please, enter your name: ") 
+username = input("Please, enter name Svitlana here: ")
 if username.lower() == name:
     print(True) 
-
