@@ -32,14 +32,13 @@ Write a program that asks the answer for a mathematical expression, checks wheth
 
 Task 4
 
-name = svitlana
-username = input("Please, give your name: ") #my attempt 
-if username.lower() == name 
-    return True 
-print(return) 
+name = 'svitlana'
+username = input("Please, enter your name: ") 
+if username.lower() == name:
+    print(True) 
 
 The name check.
-
+ 
 Write a program that has a variable with
  your name stored (in lowercase) 
 and then asks for your name as input. 
