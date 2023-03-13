@@ -1,6 +1,27 @@
 #Input та швидкий огляд імпортів
 #Task1 The Guessing Game.
 
+#1 solution using while loop
+
+import random
+y = random.randint(1,10)
+print("welcome to the guessing game.There\'s a number within range of 1 and 10. Try to guess it?")
+while True:
+   user_guess = int(input("type your guess here:"))
+
+   if y == user_guess:
+       print("Victory!You\'ve guessed the number correctly! The number was " + str(y))
+
+       break
+
+
+   print("try again!")
+
+
+
+
+#2 solution using simple if conditions
+
 import random
 
 #generating random number between 1 and 10
@@ -14,7 +35,6 @@ elif y > user_guess:
    print("Your guess "+ str(user_guess) + " is too little, please try again." +" The generated number was" + " " +str(y))
 elif y < user_guess:
    print("Your guess " + str(user_guess) + " is too big, please try again." + " The generated number was" + " "+ str(y))
-
 
 
 #Task 2
