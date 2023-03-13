@@ -1,0 +1,52 @@
+
+#Input та швидкий огляд імпортів
+#Task1 The Guessing Game.
+
+import random
+
+#generating random number between 1 and 10
+y = random.randint(1,10)
+user_guess = int(input("Try to guess a number from 1 to 10:"))
+
+if y == user_guess:
+   print("You are absolutely right!" + " The generated number is"+ " " +str(user_guess))
+
+elif y > user_guess:
+   print("Your guess "+ str(user_guess) + " is too little, please try again." +" The generated number was" + " " +str(y))
+elif y < user_guess:
+   print("Your guess " + str(user_guess) + " is too big, please try again." + " The generated number was" + " "+ str(y))
+
+
+
+#Task 2
+#The birthday greeting program.
+
+name = input('Please, enter your name')
+age = int(input('How old are you?'))
+
+print ("Hello, {name}, on your next birthday you'll be {age} years".format(name=name,age=age+1))
+ 
+
+#Task 3
+#Words combination
+
+​​import random
+user_input = input("please enter a word of 5 characters max:")
+
+letlist = random.sample(user_input,k = 5)
+random.shuffle(letlist)
+new_sequence_1 = ''.join([str(elem) for elem in letlist])#list2String conv
+
+random.shuffle(letlist)
+new_sequence_2 = ''.join([str(elem) for elem in letlist])
+
+random.shuffle(letlist)
+new_sequence_3 = ''.join([str(elem) for elem in letlist])
+
+random.shuffle(letlist)
+new_sequence_4 = ''.join([str(elem) for elem in letlist])
+
+random.shuffle(letlist)
+new_sequence_5 = ''.join([str(elem) for elem in letlist])
+
+print(new_sequence_1,new_sequence_2, new_sequence_3 , new_sequence_4, new_sequence_5)
