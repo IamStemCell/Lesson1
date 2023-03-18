@@ -12,6 +12,8 @@ i = 1
 while i<= 100:
       i+= 10 
       listN.append(i)
+
+Сгенерировано список от 1 до 100 но он не рандомный
 print(max(listN), listN) 
 
 
