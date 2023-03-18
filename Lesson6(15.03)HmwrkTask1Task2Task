@@ -6,6 +6,15 @@ list = random.sample(range(1,101),10) #generates list of 10 random numbers
 print (max(list), list)
 
 
+#Refactoreded tast 1 with while loop
+listN = []
+i = 1
+while i<= 100:
+      i+= 10 
+      listN.append(i)
+print(max(listN), listN) 
+
+
 #Task2
 #Exclusive common numbers.
 
@@ -16,6 +25,7 @@ list2 = random.sample(range(1,11),10) #llist2 of 10 numbers in random order
 list3 = set(list1) & set(list2) #common numbers in both lists without duplicates
 
 print (list(list3))
+
 
 
 #task3
