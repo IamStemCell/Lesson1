@@ -6,15 +6,19 @@ list = random.sample(range(1,101),10) #generates list of 10 random numbers
 print (max(list), list)
 
 
-#Refactoreded tast 1 with while loop
-listN = []
-i = 1
-while i<= 100:
-      i+= 10 
-      listN.append(i)
+#Refactored Task1
+import random
+list = []
+i = 0
+while i<=758:
+     i+=12
+     list.append(i) #generated sequence of numbers using while loop and indexes appending them to our empty list
+     #problem - this list is not random but sequential with a very clear step 12, but it does satisfy condition of only using while loop
+      #we need to meet condition of length of the list and make it random, therefore:
+list2 = random.sample(list,10) #using random module we rearrange our list into a new one to make it truly random where number of steps sampling our list meets condition of length of our list being 10 numbers
+#for sanity check if we put print(list2) we get this short, new, truly random list
+print(max(list2)) #using max function choose max from the list of random numbers
 
-Сгенерировано список от 1 до 100 но он не рандомный
-print(max(listN), listN) 
 
 
 #Task2
