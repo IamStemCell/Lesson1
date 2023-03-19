@@ -13,13 +13,9 @@ i = 0
 while i<=758:
      i+=12
      list.append(i) #generated sequence of numbers using while loop and indexes appending them to our empty list
-     #problem - this list is not random but sequential with a very clear step 12, but it does satisfy condition of only using while loop
-      #we need to meet condition of length of the list and make it random, therefore:
-list2 = random.sample(list,10) #using random module we rearrange our list into a new one to make it truly random where number of steps sampling our list meets condition of length of our list being 10 numbers
-#for sanity check if we put print(list2) we get this short, new, truly random list
+list2 = random.sample(list,10) #using random module we rearrange our list into a new one to make it truly random where number of steps sampling our list meets condition of length of our list 10numbers
+
 print(max(list2)) #using max function choose max from the list of random numbers
-
-
 
 Task2
 #Exclusive common numbers.
@@ -40,16 +36,15 @@ index = 0
 while index <= 9:
      index+= 1
      list.append(index) #сгенерували список виконуючи умову використання циклу while з чисел в дiапазонi 1 до 10
-list1 = random.sample(list,10) #модуль random зробив вибiрку чисел, i 1 список рандомних чисел в дiапазонi 1 до 10 готов
+list1 = random.sample(list,10) #модуль random зробив вибiрку чисел, i 1 рандомний список чисел в дiапазонi 1 до 10 готов
 list2 = random.sample(list,10)
 No_duplicates = set(list1)&set(list2) #для для пошуку спiльних цiлих чисел з обох спискiв використала множину set
-#list3 = list(No_duplicates) #можна одразу перетворити множину set на list прямо в виводі print,якдо рефекторінгу,або 
+#print(list(No_duplicates)) #можна одразу перетворити множину set на list прямо в виводі print,або 
 вручну розпаковати ножину set в новий список
 list3 = []
 for i in No_duplicates:
    list3.append(i)
 print(list3)
-
 
 
 #task3
@@ -63,8 +58,7 @@ while i <=100:
 
        print(ourlist)
 
-#Refactored
-#Task3 Refactored 
+#Refactored #Task3
 #Extracting numbers 
 
 list = []
@@ -72,12 +66,13 @@ list1 = []
 i = 0
 while i <=99:
      i+=1
-     list.append(i) #створили 1 список циклом while all integers from 1 to 100
+     list.append(i) #створили 1 список цілих чисел від 1 до 100 з допомогою циклу while
 i = 0
-while i < len(list): #проiтерували по вже створеному списку циклом while
+while i < len(list): #проiтерували цикл while по вже створеному списку 
      i+=1
      if i % 7 == 0 and i % 5 !=0:
          list1.append(i)
 print(list1)
 
-
+Сподіваюсь,на цей раз успішно виконала умови тасків. 
+Дякую за Вашу увагу!
