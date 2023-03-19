@@ -64,15 +64,20 @@ while i <=100:
        print(ourlist)
 
 #Refactored
+#Task3 Refactored 
+#Extracting numbers 
+
 list = []
 list1 = []
-i = 1
-while i <=100: 
-   i+=1
-   list.append(i)
-   if i % 7 == 0 and i % 5 !=0:
-        list1.append(i)
-        print(list1)
-
+i = 0
+while i <=99:
+     i+=1
+     list.append(i) #створили 1 список циклом while all integers from 1 to 100
+i = 0
+while i < len(list): #проiтерували по вже створеному списку циклом while
+     i+=1
+     if i % 7 == 0 and i % 5 !=0:
+         list1.append(i)
+print(list1)
 
 
