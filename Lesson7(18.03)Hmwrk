@@ -1,0 +1,58 @@
+#Task1 Dictionary with all unique words as keys and the number of occurrences as values
+
+str_input = "This is our random string we will count words from. We will have fun with this"
+def word_frequency_in_dict(str_input):
+   frequency = dict() #created dictionary using built in function
+   words = str_input.split() #split method to get list of words from our string
+
+   for word in words:
+       if word not in frequency.keys(): #histogram 
+           frequency[word] = 1 # value, our number, paired with our word-key, remains the same
+       else:
+           frequency[word] +=1  #value - number of occurences of word-key is getting counted
+
+   return frequency
+print(word_frequency_in_dict(str_input))
+
+
+#Task 2 Compute the total price of the stock where the total price is the
+#sum of the price of an item multiplied by the quantity of this exact item.
+
+stock = {
+   "banana": 6,
+   "apple": 0,
+   "orange": 32,
+   "pear": 15
+}
+prices = {
+   "banana": 4,
+   "apple": 2,
+   "orange": 1.5,
+   "pear": 3
+}
+
+dict_new = {} #created new empty dictionary
+t_price = 0
+for i in prices:
+   t_price += prices[i]*stock[i]
+ #for loop iterated over entire sequence we start from zero then add every total sum as we
+ # iterate over each element of our dictionary adding each multiplication between keys since keys are exactly the same  in both dictionaries, to get the total sum of all stock
+
+dict_new.update({"Total Stock Price" : int(t_price)}) #updated with key Total Stock Price with value of computation
+
+print(dict_new)
+
+#Task3 list comprehension 
+
+list = [(i,i**2) for i in range(1,11)]
+
+#Task4
+#Create a list with days if the week.
+#Turn into a dictionary in one line, then reverse order
+
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+weekdaysD = dict(zip([1,2,3,4,5,6,7], ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']))
+
+weekdaysDrevord = dict(zip( ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],[1,2,3,4,5,6,7]))
+
