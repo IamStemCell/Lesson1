@@ -32,21 +32,20 @@ print(make_country("Germany","Berlin"))
 #the call make_operation(‘-’, 5, 5, -10, -20) should return 30
 #the call make_operation(‘*’, 7, 6) should return 42
 
-def make_operation(operator, n1,n2,n3):
-    if operator == '-':
-       result = n1 - n2 -n3
-    elif operator == '+' :
+def make_operation(operator, n1, n2, n3):
+   if operator == '-':
+       result = n1 - n2 - n3
+   elif operator == '+':
        result = n1 + n2 + n3
-    elif operator == '*':
-       result = n1*n2*n3
-     return result
+   elif operator == '*':
+       result = n1 * n2 * n3
+   return result
 
-#this next block of code makes our calculator interactive taking numbers from user as integers
+n1 = int(input('Enter first number:'))
+n2 = int(input('Enter second number:'))
+n3 = int(input('Enter third number: '))
+operator = input("enter operator '+,-,*: ")
+calculation = make_operation(operator, n1, n2, n3)
+print(n1,operator,n2,operator,n3, '=', calculation)
 
-n1 = int(input('Enter first number: '))
-n2 = int(input('Enter second number: '))
-n3 = int(input ('Enter third number: '))
-operator = input("enter operator '+,-,*: ')
-print (operator,n1,n2,n3)
-calculation = make_operation(operator,n1,n2,n3)
-print('=', calculation) 
+
