@@ -4,24 +4,30 @@
 #Then write another function that calls oops inside a try/except state­ment to catch the error.
 #What happens if you change oops to raise KeyError instead of IndexError?
 
-def oops([i]):
-    if list([i]) is out of range:
-        raise Exception IndexError: 
-return print('index is out of range')
-
-Або 2 варіант 
-
-def oops([i]):
-    List =['2','3']
-    if list([3]): 
-   raise Exception IndexError: 
-return print('index is out of range')
-
-def catch_error:
+def oops():
     try: 
-    list([i])
-    except(oops([i]):
-return print('index is out of range')
+        x=[4]
+        x[4]
+    except IndexError:
+        return 'Index is out of range'
+        
+print(oops())
+
+def oops1():
+    try:
+        b= {2: 7}
+        b[3]
+    except KeyError:
+        return 'Key is out of range'
+print (oops1())
+
+def catch_error():
+    try: 
+        oops()
+    except IndexError:
+        return 'index is out of range'
+ 
+print (catch_error()) 
 
 #Task 2
 
