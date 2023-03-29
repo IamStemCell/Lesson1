@@ -31,10 +31,10 @@ return print('index is out of range')
 #which raises an exception if the two values given by the input function were not numbers, 
 #and if value b was zero (cannot divide by zero).    
 
-def square_div(num1,num2):
+def square_div(a,b):
     a = input('please enter a number: ')
     b = input('please enter a number: ')
-    a,b = num1,num2
+   
     try : 
           x = a**2/b
        if type(a) = str and type(b) = str:
