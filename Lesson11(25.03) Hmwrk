@@ -1,0 +1,54 @@
+Наразі маю завершену лише першу фічу програми Task2 що додає нові записи до бази даних
+Ось код. Скажу чесно, все дається дуже нелегко і повільно, але ми не здаємось. Пару ночей і думаю, допишу всю. 
+
+#Feature 1 Add New Entry to our data Base
+contactbook = dict() #empty dictionary using function dict that is a nested dictionary in main database dictf or fresh entry
+newentryuserinput = input('Please provide new entry to our database by typing in the phone number: ')
+#this user input will be turned into a key to our dictionary with a subdictionary
+# first name, last name, full name, city, state ')
+
+def newentry_dict(newentryuserinput):
+   contactbook.update({(newentryuserinput): 'slot for sub dictionary to be filled in' })
+   return contactbook
+
+print(newentry_dict(newentryuserinput))
+
+contactbook[newentryuserinput] = dict() #new empty dict that will be value to our main key - phonenumber
+
+nameuinput = input('Please provide Name : ')
+def name_v_input(nameuinput):
+   contactbook[newentryuserinput]['Name'] = nameuinput
+   return contactbook[newentryuserinput]
+print(name_v_input(nameuinput))
+
+lninput = input('Please provide Last name: ')
+def lname_v_input(lninput):
+   contactbook[newentryuserinput]['Last name'] = lninput
+   return contactbook[newentryuserinput]
+print(lname_v_input(lninput))
+
+flnm_input = input('Plase provide Full Name: ')
+
+def flname_v_input(flnm_input):
+   contactbook[newentryuserinput]['Full name'] = flnm_input
+   return contactbook[newentryuserinput]
+
+print(flname_v_input(flnm_input))
+
+ctinput = input('Please provide City: ')
+def ct_v_input(ctinput):
+   contactbook[newentryuserinput]['City'] = ctinput
+   return contactbook[newentryuserinput]
+
+print(ct_v_input(ctinput))
+
+stateinput = input('Please provide State: ')
+
+def state_v_input(stateinput):
+   contactbook[newentryuserinput]['State'] = stateinput
+   return contactbook[newentryuserinput]
+
+print(state_v_input(stateinput))
+
+print(contactbook) #NEW ENTRY WITH NEW PHONENUMBER FROM OUR USER
+
