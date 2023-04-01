@@ -77,5 +77,15 @@ def test (filename):
        print (f" The number of characters is {count_chars(file)}") 
 
 
-test("mymod.py") #ось тест модуля сам на себе, який відкриває його двічі 
+TestingImports.py
+
+from mymod.py import test 
+test(filename)
+
+from mymod.py import count_lines 
+count_lines(filename)
+
+from mymod.py import test 
+test(mymod.py) 
+#ось тест модуля сам на себе, який відкриває його двічі 
 
