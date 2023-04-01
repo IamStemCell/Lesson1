@@ -54,6 +54,12 @@ Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
 #count_chars(name) function that reads an input file and counts the number of characters in it (hint: file.read() returns a single string)
 #test(name) function that calls both counting functions with a given input file­name. Such a filename generally might be passed-in, hard-coded, input with raw_input, or pulled from a command-line via the sys.argv list; for now, assume it’s a passed-in function argument.
 
+
+ 
+
+
+
+Mymod.py
 def count_lines (file): 
       lines = len(file.readlines())
       return lines
@@ -70,4 +76,13 @@ def test (filename):
        print (f"The number of lines is : {count_lines(file)}")
        print (f" The number of characters is {count_chars(file)}") 
 
+Test.py  
+Import os 
+Import sys 
+
+From mymod.py import test
+test(test.txt) 
+
+Або можна в агрументи модуля sys 
+filepath = sys.agrv([1]) 
 
