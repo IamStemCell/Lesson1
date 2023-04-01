@@ -1,0 +1,73 @@
+#Task1 Imports practice
+
+#Make a directory with 2 modules;
+ make a function in one of them; then import this function in the other module and use that in your script of choice.
+
+#directory with 2 files 
+TriangleP.py 
+Lesson9Imports.py
+
+#Module1 that has function to be imported
+TriangleP.py 
+
+def perimeter (side1, side2, side3):
+    return side1+ side2 + side3
+
+#File to import into 
+#Lesson9Imports.py
+
+from TriangleP import perimeter
+print(perimeter(2,4,5))
+
+
+#Task 2
+
+#The sys module.
+
+ #The “sys.path” list is initialized from the PYTHONPATH environment variable.
+ #Is it possible to change it from within Python?
+ #If so, does it affect where Python looks for module files?
+ #Run some interactive tests to find it out
+
+Так, при запуску скрипта через interpreter, python 
+виконує пошук спершу в тій директорії, в якій створено скрипт. 
+Users/username/Documents/PythonPractice/BeetRootAcademy
+i є можливість змінювати директорії пошуку з допомогою методів роботи зі списком 
+
+import.sys 
+print(sys.path) 
+sys.path.append("nameofDirectory") 
+
+NameofDirectory - додадкова папка, в якій ми хочемо, щоб python виконав пошук модулів'.
+Але за замовчуванням (дефаулт) python виконує пошук модулів з вбудованої бібліотеки, 
+яка встановлюється при інсталяції Python. Є чітка ієрархія в подачі директорій в списку при
+імпорті sys.path - при запуску з інтерпретатора першою в списку буде папка з файлом, а який було імпортовано sys.path,
+ а в інтерактивному режимі в терміналі - дефаулт вбудована бібліотека. 
+Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
+
+При запуску IDLE file->path browser-> модуль  sys path представлений у вигляді папки в дереві з вбудованими бібліотекам 
+
+#Task3
+# Basics, import, work with os module
+#Create a Python module called `mymod.py`, which has three functions:
+#count_lines(name) function that reads an input file and counts the number of lines in it (hint: file.readlines() does most of the work for you, and `len` does the rest) 
+#count_chars(name) function that reads an input file and counts the number of characters in it (hint: file.read() returns a single string)
+#test(name) function that calls both counting functions with a given input file­name. Such a filename generally might be passed-in, hard-coded, input with raw_input, or pulled from a command-line via the sys.argv list; for now, assume it’s a passed-in function argument.
+
+def count_lines (file): 
+      lines = len(file.readlines())
+      return lines
+
+ #file readlines result is a list of lines,so we use len function to count lines in our file
+       
+
+def count_chars(file):
+      chars = len(file.read()) #read results in a string
+      return chars 
+
+def test (filename): 
+    with open (filename, "r", encoding = "utf-8") as file:
+       print (f"The number of lines is : {count_lines(file)}")
+       print (f" The number of characters is {count_chars(file)}") 
+
+
