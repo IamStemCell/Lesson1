@@ -59,7 +59,7 @@ Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
 
 
 
-Mymod.py
+mymod.py
 def count_lines (file): 
       lines = len(file.readlines())
       return lines
@@ -76,13 +76,6 @@ def test (filename):
        print (f"The number of lines is : {count_lines(file)}")
        print (f" The number of characters is {count_chars(file)}") 
 
-Test.py  
-Import os 
-Import sys 
 
-From mymod.py import test
-test(test.txt) 
-
-Або можна в агрументи модуля sys 
-filepath = sys.agrv([1]) 
+test("mymod.py") #ось тест модуля сам на себе, який відкриває його двічі 
 
