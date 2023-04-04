@@ -5,29 +5,21 @@
 #What happens if you change oops to raise KeyError instead of IndexError?
 
 def oops():
-    try: 
-        x=[4]
-        x[4]
-    except IndexError:
-        return 'Index is out of range'
-        
-print(oops())
-
-def oops1():
-    try:
-        b= {2: 7}
-        b[3]
-    except KeyError:
-        return 'Key is out of range'
-print (oops1())
+    qw= IndexError
+    raise qw #this function raises IndexError 
 
 def catch_error():
     try: 
         oops()
-    except IndexError:
-        return 'index is out of range'
+    except:
+        print('Index error is caught')
  
 print (catch_error()) 
+# if we make oops raise KeyError
+#def oops():
+#    qwerty=KeyError
+#    raise qwerty
+#then our catch_error function will catch KeyError 
 
 #Task 2
 
@@ -40,12 +32,12 @@ print (catch_error())
 def square_div(a,b):
     a = input('please enter a number: ')
     b = input('please enter a number: ')
-   
+  
     try : 
           x = a**2/b
        if type(a) = str and type(b) = str:
             raise exception TypeError:
-       print ('wrong data type. Please, enter a number')
+            print ('wrong data type. Please, enter a number')
     try : 
           x = a**2/b
       if b == 0 : 
