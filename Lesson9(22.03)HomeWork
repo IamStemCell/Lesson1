@@ -47,16 +47,12 @@ Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
 
 При запуску IDLE file->path browser-> модуль  sys path представлений у вигляді папки в дереві з вбудованими бібліотекам 
 
-#Task3
+#Task3 Refactored 4.04.2023
 # Basics, import, work with os module
 #Create a Python module called `mymod.py`, which has three functions:
 #count_lines(name) function that reads an input file and counts the number of lines in it (hint: file.readlines() does most of the work for you, and `len` does the rest) 
 #count_chars(name) function that reads an input file and counts the number of characters in it (hint: file.read() returns a single string)
 #test(name) function that calls both counting functions with a given input file­name. Such a filename generally might be passed-in, hard-coded, input with raw_input, or pulled from a command-line via the sys.argv list; for now, assume it’s a passed-in function argument.
-
-
- 
-
 
 
 mymod.py
@@ -66,7 +62,6 @@ def count_lines (file):
 
  #file readlines result is a list of lines,so we use len function to count lines in our file
        
-
 def count_chars(file):
       chars = len(file.read()) #read results in a string
       return chars 
@@ -76,16 +71,9 @@ def test (filename):
        print (f"The number of lines is : {count_lines(file)}")
        print (f" The number of characters is {count_chars(file)}") 
 
+test('mymod.py') #тест модуля сам на себе
 
-TestingImports.py
-
-from mymod.py import test 
-test(filename)
-
-from mymod.py import count_lines 
-count_lines(filename)
-
-from mymod.py import test 
-test(mymod.py) 
-#ось тест модуля сам на себе, який відкриває його двічі 
+#the number of lines is : 17
+#the number of characters is 0
+# функцію file seek для повторного читання модулю я не використовувала, тому chars is 0
 
