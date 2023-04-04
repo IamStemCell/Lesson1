@@ -67,7 +67,7 @@ while i <=9:
     i +=1
 
 print(randomlist2) #маємо 2 список 
-No_duplicates = set(list1)&set(list2) #для для пошуку спiльних цiлих чисел з обох спискiв без дублікатів використала множину set
+No_duplicates = set(randomlist1)&set(randomlist2) #для для пошуку спiльних цiлих чисел з обох спискiв без дублікатів використала множину set
 #print(list(No_duplicates)) #можна одразу перетворити множину set на list прямо в виводі print,або 
 вручну розпаковати множину set в новий список ndlist
 ndlist3 = []
