@@ -48,6 +48,8 @@ print(list3)
 
 
 #Task2 Рефакторинг 4.04.2023
+#Exclusive common numbers.
+
 
 import random 
 randomlist1 = []
@@ -55,7 +57,7 @@ i = 0
 while i <=9:
     n = random.randint(1,10)
     randomlist1.append(n)
-    i +=1
+    i+=1
 
 print(randomlist1) #маємо 1 список з 10рандомних чисел 
 
@@ -63,19 +65,19 @@ randomlist2 = []
 i = 0 
 while i <=9:
     n = random.randint(1,10)
-    randomlist1.append(n)
-    i +=1
+    randomlist2.append(n)
+    i+=1
 
 print(randomlist2) #маємо 2 список 
+
 No_duplicates = set(randomlist1)&set(randomlist2) #для для пошуку спiльних цiлих чисел з обох спискiв без дублікатів використала множину set
 #print(list(No_duplicates)) #можна одразу перетворити множину set на list прямо в виводі print,або 
-вручну розпаковати множину set в новий список ndlist
+вручну розпаковати множину set в новий список ndlist3
 ndlist3 = []
 for i in No_duplicates:
    ndlist3.append(i)
 
 print(ndlist3) 
-
 
 
 #task3
