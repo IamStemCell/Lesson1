@@ -56,24 +56,23 @@ Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
 
 
 mymod.py
+def rewind(file):
+    file.seek(0)
+
 def count_lines (file): 
       lines = len(file.readlines())
       return lines
-
- #file readlines result is a list of lines,so we use len function to count lines in our file
-       
+      
 def count_chars(file):
-      chars = len(file.read()) #read results in a string
+      chars = len(file.read())
       return chars 
 
 def test (filename): 
     with open (filename, "r", encoding = "utf-8") as file:
        print (f"The number of lines is : {count_lines(file)}")
-       print (f" The number of characters is {count_chars(file)}") 
+       rewind(file)
+       print (f"The number of characters is: {count_chars(file)}") 
 
-test('mymod.py') #тест модуля сам на себе
+test('mymod.py') 
 
-#the number of lines is : 17
-#the number of characters is 0
-# функцію file seek для повторного читання модулю я не використовувала, тому chars is 0
-
+#upd 5.04 використала file.seek 
