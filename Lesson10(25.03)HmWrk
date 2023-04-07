@@ -46,4 +46,9 @@ def square_div():
     except ZeroDivisionError as m:
         print(m)
 
+result = square_divide()
+if result is not None:
+    print(f"The result is: {result}")
+
+# приклад застосування функції умова if result is not none потрібна на випадок, якщо b не нуль і не спрацювало Виключення, тобто функція повертає результат у випадку коли немає zerodiverror
 
