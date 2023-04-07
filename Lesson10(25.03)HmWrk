@@ -28,10 +28,6 @@ print (catch_error())
 #returns the value of squared a divided by b, construct a try-except block 
 #which raises an exception if the two values given by the input function were not numbers, 
 #and if value b was zero (cannot divide by zero).    
-
-def square_div(a,b):
-    a = input('please enter a number: ')
-    b = input('please enter a number: ')
   
 def square_div():
     try:
