@@ -29,6 +29,7 @@ print (catch_error())
 #which raises an exception if the two values given by the input function were not numbers, 
 #and if value b was zero (cannot divide by zero).    
   
+
 def square_div():
     try:
         a = float(input("Please enter a number for a: "))
@@ -42,9 +43,20 @@ def square_div():
     except ZeroDivisionError as m:
         print(m)
 
-result = square_divide()
-if result is not None:
-    print(f"The result is: {result}")
+    result = square_div()
+    if result is not None:
+        print(f"The result is: {result}")
 
-# приклад застосування функції умова if result is not none потрібна на випадок, якщо b не нуль і не спрацювало Виключення, тобто функція повертає результат у випадку коли немає zerodiverror
+square_div()
+
+#output
+#Please enter a number for a: y
+#Invalid input. These values are not acceptable. Both entered values must be numbers.
+#Please enter a number for a: 7
+#Please enter a number for b: 0
+#Division by zero is prohibited
+#Please enter a number for a: 6
+#Please enter a number for b: 2
+#The result is: 18.0
+
 
