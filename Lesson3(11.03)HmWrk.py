@@ -1,7 +1,7 @@
 #Task1 
 #The greeting program.
 
-name = "Svitlana"
+name = "IamStemCell"
 day = "Saturday"
 #1 way using arguments of print function
 print ("Good day",name,"!",day,"is a perfect day to learn some python.")
@@ -17,8 +17,8 @@ print(f"Good day {name}! {day} is a perfect day to learn some python.")
 #Task 2
 #Manipulate strings.
 
-first_name = "svitlana"
-last_name = "poly"
+first_name = "iamstemm"
+last_name = "cell"
 
 print("Hello, " + first_name.title() + " " + last_name.title())
 
