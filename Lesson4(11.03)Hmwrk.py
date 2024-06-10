@@ -32,7 +32,7 @@ else: print("unfortunately, the answer is incorrect")
 #Task 4 
 #The name check.
 
-name = 'svitlana'
-username = input("Please, enter name Svitlana here: ")
+name = 'username'
+username = input("Please, enter name Username here: ")
 if username.lower() == name:
     print(True) 
