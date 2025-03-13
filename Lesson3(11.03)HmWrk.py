@@ -26,7 +26,7 @@ print("Hello, " + first_name.title() + " " + last_name.title())
 #Task 3 
 #Using python as a calculator.
 
-a = 8
+a =8
 b = 6
 print(a+b)
 print(a-b)
@@ -39,10 +39,12 @@ print (a//b)
 
 #Task 3 ref simple prints and not input/function just practice of type casting
 
-#values into variables
-a = 8 
-b = 6 
+#assign values into variables
+#a = int(input("Please type first number: "))  #handles user input str inti int
+#b = int(input("Please type second number: ")) #str into int typecast
 
+a = 8
+b = 6
 #Print the result for each operation
 print("Addition: ", a + b)
 print("Subtraction: ", a - b)
