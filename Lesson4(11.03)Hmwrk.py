@@ -11,6 +11,33 @@ print(first2last2("helloworld"))
 print(first2last2("my"))
 print(first2last2("x"))
 
+#Task 1 refactored without functions
+# Input string from the user
+samplestr = input("Please type a string: ")
+
+# Check the length of the string
+if len(samplestr) < 2:
+    result = ""
+else:
+    # concatenation of first 2 letters & last 2 letters
+    result = samplestr[:2] + samplestr[-2:]
+
+# Print the result
+print("Result:", result)
+
+#Output check
+
+#Please type a string: helloworld
+#Result: held
+
+#Please type a string: my
+Result: mymy
+
+#Please type a string: x
+Result: 
+
+
+
 
 #Task 2
 #The valid phone number program.
