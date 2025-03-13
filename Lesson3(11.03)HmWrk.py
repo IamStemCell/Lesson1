@@ -35,3 +35,30 @@ print(a*b)
 print (a**b)
 print (a%b)
 print (a//b)
+
+
+#Task 3 ref simple prints and not input/function just practice of type casting
+
+#values into variables
+a = 8 
+b = 6 
+
+#Print the result for each operation
+print("Addition: ", a + b)
+print("Subtraction: ", a - b)
+print("Multiplication: ", a * b)
+print("Division: ", a / b)           # Regular division
+print("Exponent (Power): ", a ** b)  # a raised to the power of b
+print("Modulus: ", a % b)            # Remainder of the division, modulo
+print("Floor Division: ", a // b)    # Division that rounds down
+
+
+#output
+
+#Addition:  13
+#Subtraction:  7
+#Multiplication:  30
+#Division:  3.3333333333333335
+#Exponent (Power):  1000
+#Modulus:  1
+#Floor Division:  3
