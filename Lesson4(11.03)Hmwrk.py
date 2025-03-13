@@ -46,7 +46,23 @@ randomstring = '2345675467'
 if randomstring.isdigit() and len(randomstring) == 10:
     print('the string is in the right format for a phone number')
 else: 
-print('the string needs formatting')
+    print('the string needs formatting')
+
+
+#Task2 ref using user input + boolean variable 
+
+# Get user input
+phone_num = input("Please enter phone number: ")
+
+# Boolean variable that stores validation result
+str_is_valid = phone_num.isdigit() and len(phone_num) == 10
+
+# Print the result based on the boolean value
+if str_is_valid: #if True
+    print("String has valid format for a phone number")
+else:
+    print("String format is invalid for a phone number. Please enter a 10 digit long numerical value.")
+
 
 #Task 3
 #The math quiz program.
